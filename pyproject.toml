@@ -3,12 +3,15 @@ name = "task-adder"
 version = "0.1.0"
 description = "Add your tasks here and automatically populate your google calendar"
 authors = [
-    {name = "Angel Amaya",email = "135993385+aamaya33@users.noreply.github.com"}
+    {name = "Angel Amaya",email = "aamayaa75@gmail.com"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "google-auth-oauthlib (>=1.2.2,<2.0.0)",
+    "google-api-python-client (>=2.181.0,<3.0.0)",
+    "google-auth-httplib2 (>=0.2.0,<0.3.0)"
 ]
 
 
