@@ -14,7 +14,7 @@ class EventEntity(BaseModel):
 
 
 class EventDateTime(BaseModel):
-    date: Optional[date] = None
+    dayte: Optional[date] = None
     dateTime: Optional[datetime] = None
     timeZone: Optional[str] = None
 
