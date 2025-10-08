@@ -22,6 +22,9 @@ class FileIngestor:
         Returns:
             Extracted information from the file.
         """
+        doc = pymupdf.open(file_path)
+        page = doc.load_page(0)
+        print(type(page), page.get_contents())
         return {}
 
     def parse_pdf_content(self, file_content: dict) -> dict:
@@ -60,3 +63,6 @@ class FileIngestor:
             list: A list of extracted assignments.
         """
         return []
+
+test = FileIngestor()
+test.read_and_extract_from_file("C:\\Users\\amaya\\Documents\\GitHub\\park-finder\\src\\backend\\services\\file_ingestion\\CourseSchedule-CC-25-fall.pdf")
